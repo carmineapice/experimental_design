@@ -1,46 +1,15 @@
-setwd("C:/Users/SP453RH/Desktop/R_Experimental_Design")
-
-#Exercises
-
-# Section 2
-
-# Questions
-# 2.1.1 - Describe the steps in the planning process on the height of bread (see section 2.3)
-# 2.1.2 - Describe the potential problems (see section 1.7)
-# 2.1.3 - Discuss how careful planning using the checklist in Chapter 1
-
-# Solutions
-# 2.1.1, 2.12, 2.1.3
-
-# Objectives: the objective of the study is to determine the effect of time to rise on the height of bread
-# dought. 
-
-# Experimental Unit: the experimental unit are the loaf pans. 
-# Response/Dependent Variable: the variable is the measured height of a bread dought
-# Indipendent Variables: the variable is amount of time in minutes
-# Lurking Variables: any possible difference out of time affecting the heigth of bread loaf
-# Pilot Test: let bread loaf growing at different time, realizing if we can control time extension
-# and be able to correctly measure the height.
-# Choose Experimental Design: We Choose the CRD with One Factor (time) and multiple levels (35,40,45) 
-# affecting our measurable variable of interest (height)
-
-# PLUS: the experiment should be run always in the same conditions (also the expternal temperature
-# could affect the height.); We should be careful on the fact that bread loaf should be homogeneous.
-
-
-
-# Questions 2
-# 2.2.1 - The experimental unit is the single helicopter
-# 2.2.2 - Replicates are the different experimental unit with different cut. Duplicates are essentially 
+# Questions 
+# The experimental unit is the single helicopter
+# Replicates are the different experimental unit with different cut. Duplicates are essentially 
 # the same experimental unit
-# 2.2.3 - The treatment factor is the amount of centimeters we cut from the blades
-# 2.2.4 - Lurking variables could be: the wind in that specific moment, the different weight of the paper
+# The treatment factor is the amount of centimeters we cut from the blades
+# Lurking variables could be: the wind in that specific moment, the different weight of the paper
 # any minimal difference in the height from which you leave the helicopter to fly;
 # Randomization could be important since we can assess if the differences in the time to fly can be really affected
 # by the differences in the cut level of the paper
 
-# f) Create a randomized list of experiments for examining four wing lengths of 4, 4.75, 5.5, 6 with eight replicate
-# experiment at each level
+# Let's create a randomized list of experiments for examining four wing lengths of 4, 4.75, 5.5, 6 with eight replicate
+# experiment at each level.
 
 setwd("C:/Users/SP453RH/Desktop/R_Experimental_Design")
 
@@ -69,7 +38,6 @@ summary(mod1)
 # among the levels of cut applied to the blades.
 
 
-
 # ---
 
 plot(mod1, which=5)
@@ -81,9 +49,7 @@ plot(residuals(mod1)~ hel, data=helicop)
 # show an (even slightly) different variability in the errors.
 
 
-
 # ---
-
 
 library(MASS)
 bc <- boxcox(mod1)
@@ -92,7 +58,6 @@ lambda
 # We look at with box-cox transformation 
 # to see which is the normalizing parameter that
 # could affect the variance of our error
-
 
 #---
 
@@ -123,16 +88,4 @@ rownames(L) <- c("Nome1", "Nome2", "Nome3")
 
 # N.B. In this case use fit.contrast
 
-
-
-
-
-#
-
-library(MASS)
-
-
-library(daewr)
-mod0 <- lm( result ~ cuts, data = helicop)
-summary(mod0)
 
