@@ -1,3 +1,15 @@
+# EXPERIMENTAL DESIGN
+
+# OVERVIEW
+# Introduction
+
+# Experimental Design: the model is just a tool
+
+# Real Life Example: Paper Helicopters
+## Define the goals of your experiment
+## 
+
+
 # Questions 
 # The experimental unit is the single helicopter
 # Replicates are the different experimental unit with different cut. Duplicates are essentially 
