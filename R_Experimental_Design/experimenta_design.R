@@ -2,11 +2,17 @@
 
 # OVERVIEW
 # Introduction
+# Explaing briefly what is experimental desi
+
 
 # Experimental Design: the model is just a tool
 
+## Objectivs: 
+## 
+
+
 # Real Life Example: Paper Helicopters
-## Define the goals of your experiment
+## Objectivs: Define the goals of your experiment
 ## 
 
 
